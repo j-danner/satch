@@ -622,7 +622,8 @@ parse (void)
 	  if (type)
 	    parse_error ("'x' after '%c'", type);
 	  if (!force && format != 'x')
-	    parse_error ("unexpected 'x' in CNF (use 'p xnf ...' header)");
+	    //parse_error ("unexpected 'x' in CNF (use 'p xnf ...' header)");
+            format = 'x';
 	  type = 'x';
 	  continue;
 	}
